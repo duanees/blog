@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>Actually, less is more!</description>
+    <link>http://localhost:4000/blog/</link>
+    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 30 Jan 2018 21:20:54 +0800</pubDate>
+    <lastBuildDate>Tue, 30 Jan 2018 21:20:54 +0800</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Markdown 语法学习</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#简介&quot; id=&quot;markdown-toc-简介&quot;&gt;简介&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#对html的兼容&quot; id=&quot;markdown-toc-对html的兼容&quot;&gt;对HTML的兼容&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#常用语法&quot; id=&quot;markdown-toc-常用语法&quot;&gt;常用语法&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#标题的显示&quot; id=&quot;markdown-toc-标题的显示&quot;&gt;&lt;strong&gt;标题的显示&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#引用&quot; id=&quot;markdown-toc-引用&quot;&gt;&lt;strong&gt;引用&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#列表&quot; id=&quot;markdown-toc-列表&quot;&gt;&lt;strong&gt;列表&lt;/strong&gt;&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#无序列表使用星号加号或是减号作为列表标记&quot; id=&quot;markdown-toc-无序列表使用星号加号或是减号作为列表标记&quot;&gt;无序列表使用星号、加号或是减号作为列表标记&lt;/a&gt;            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;#有序列表则使用数字接着一个英文句点&quot; id=&quot;markdown-toc-有序列表则使用数字接着一个英文句点&quot;&gt;有序列表则使用数字接着一个英文句点&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#代码块&quot; id=&quot;markdown-toc-代码块&quot;&gt;&lt;strong&gt;代码块&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#分割线-以下任意一种都行&quot; id=&quot;markdown-toc-分割线-以下任意一种都行&quot;&gt;&lt;strong&gt;分割线&lt;/strong&gt; （以下任意一种都行）&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#链接&quot; id=&quot;markdown-toc-链接&quot;&gt;&lt;strong&gt;链接&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#强调&quot; id=&quot;markdown-toc-强调&quot;&gt;&lt;strong&gt;强调&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#图片&quot; id=&quot;markdown-toc-图片&quot;&gt;&lt;strong&gt;图片&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
+&lt;p&gt;Markdown 是从文本到html的一种转换工具，相比于html，markdown更易读和写，下面就简单介绍一些markdown的基本语法。&lt;/p&gt;
+
+&lt;h2 id=&quot;对html的兼容&quot;&gt;对HTML的兼容&lt;/h2&gt;
+&lt;p&gt;在markdown语言中可以兼容html标签，但是某些标签插入的时候有些特别，比如&amp;lt;div&amp;gt;、&amp;lt;table&amp;gt;、&amp;lt;p&amp;gt;、&amp;lt;pre&amp;gt;等，这些标签要独自成一行，才会被识别，不然就直接被当做文本了。&lt;/p&gt;
+
+&lt;h2 id=&quot;常用语法&quot;&gt;常用语法&lt;/h2&gt;
+
+&lt;h4 id=&quot;标题的显示&quot;&gt;&lt;strong&gt;标题的显示&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;p&gt;setext显示标题的语法（注意在标题前面要空一行）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;这是 H1
+=============
+
+这是 H2
+-------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;atx显示标题的语法（注意#和文字之间的空格）
+    # 这是 H1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;## 这是 H2
+
+###### 这是 H6
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;引用&quot;&gt;&lt;strong&gt;引用&lt;/strong&gt;&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt;   代表blockquote
+&amp;gt;&amp;gt;  区块里面内嵌区块
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;效果如下&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;代表blockquote&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;区块里面内嵌区块&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;列表&quot;&gt;&lt;strong&gt;列表&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;h5 id=&quot;无序列表使用星号加号或是减号作为列表标记&quot;&gt;无序列表使用星号、加号或是减号作为列表标记&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;* 第一项列表
++ 第二项列表
+- 第三项列表
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;第一项列表&lt;/li&gt;
+  &lt;li&gt;第二项列表&lt;/li&gt;
+  &lt;li&gt;第三项列表&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;有序列表则使用数字接着一个英文句点&quot;&gt;有序列表则使用数字接着一个英文句点&lt;/h6&gt;
+&lt;pre&gt;&lt;code&gt;1. 第一项列表
+2. 第二项列表
+3. 第三项列表
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;第一项列表&lt;/li&gt;
+  &lt;li&gt;第二项列表&lt;/li&gt;
+  &lt;li&gt;第三项列表&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;代码块&quot;&gt;&lt;strong&gt;代码块&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;普通的段落缩进4个空格或者一个制表符&lt;/p&gt;
+
+&lt;h4 id=&quot;分割线-以下任意一种都行&quot;&gt;&lt;strong&gt;分割线&lt;/strong&gt; （以下任意一种都行）&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&quot;链接&quot;&gt;&lt;strong&gt;链接&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;行内式&lt;/p&gt;
+
+&lt;p&gt;行内式的链接，只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;This is [an example](http://example.com/ &quot;Title&quot;) inline link.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot;&gt;an example&lt;/a&gt; inline link.&lt;/p&gt;
+
+&lt;p&gt;参考式&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;参考式的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;也可以选择性地在两个方括号中间加上一个空格，接着，在文件的任意处，你可以把这个标记的链接内容定义出来。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;也可以用隐式链接标记，只要在链接文字后面加上一个空的方括号&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;标记的链接内容定义：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;接着一个冒号&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;接着一个以上的空格或制表符&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;接着链接的网址&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;选择性地接着 title 内容，可以用单引号、双引号或是括弧包着&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;下面是用隐式链接的例子&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;I get 10 times more traffic from [Google][] than from
+[Yahoo][] or [MSN][].
+
+  [google]: http://google.com/        &quot;Google&quot;
+  [yahoo]:  http://search.yahoo.com/  &quot;Yahoo Search&quot;
+  [msn]:    http://search.msn.com/    &quot;MSN Search&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;I get 10 times more traffic from &lt;a href=&quot;http://google.com/&quot; title=&quot;Google&quot;&gt;Google&lt;/a&gt; than from
+&lt;a href=&quot;http://search.yahoo.com/&quot; title=&quot;Yahoo Search&quot;&gt;Yahoo&lt;/a&gt; or &lt;a href=&quot;http://search.msn.com/&quot; title=&quot;MSN Search&quot;&gt;MSN&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;强调&quot;&gt;&lt;strong&gt;强调&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;用 * 或者 _ 表示强调，一个 * 或者 _ 表示&amp;lt;em&amp;gt;，两个表示&amp;lt;strong&amp;gt;,如果要显示*或者_符号，可以直接在符号两边加个空格或者加上反斜杠\&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;single underscores&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;double underscores&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;图片&quot;&gt;&lt;strong&gt;图片&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;行内式&lt;/p&gt;
+
+&lt;p&gt;一个惊叹号 !，接着一个方括号，里面放上图片的替代文字，接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上 选择性的 ‘title’ 文字。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;![Alt text](/blog/styles/images/logo.jpg &quot;Optional title&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/styles/images/logo.jpg&quot; alt=&quot;Alt text&quot; title=&quot;Optional title&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;参考式
+一个惊叹号 !，接着一个方括号，里面放上图片的替代文字，接着一个方括号，是图片参考的名称，图片参考的定义方式则和连结参考一样&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;![Alt text][id]
+
+[id]: /blog/styles/images/logo.jpg  &quot;Optional title attribute&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;效果如下：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/styles/images/logo.jpg&quot; alt=&quot;Alt text&quot; title=&quot;Optional title attribute&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 23 May 2017 16:12:01 +0800</pubDate>
+        <link>http://localhost:4000/blog/2017/05/23/markdown-syntax/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/05/23/markdown-syntax/</guid>
+        
+        <category>其他</category>
+        
+        
+        <category>document</category>
+        
+      </item>
+    
+  </channel>
+</rss>
